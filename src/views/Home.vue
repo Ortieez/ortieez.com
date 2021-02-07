@@ -4,23 +4,23 @@
       <img class="main-logo" src="@/assets/logo.png" />
       <h2 class="main-name">ortieez</h2>
     </div>
+    <Nav />
     <div class="center-text">
       <div class="center-wrap">
         <h1 class="main-center">Hey,I am ortieez!</h1>
         <h3 class="second-center">Web Developer. Designer. Student.</h3>
       </div>
     </div>
-    <!-- <Nav/> -->
   </div>
 </template>
 
 <script>
-// import Nav from '@/components/Nav.vue'
+import Nav from "@/components/Nav.vue";
 
 export default {
   name: "Home",
   components: {
-    // Nav
+    Nav,
   },
 };
 </script>
