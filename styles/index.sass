@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap')
+
+html body
+    margin: 0
+
+body
+    // Background options
+    background: url('../images/wavemesh_bg.png') no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    background-color: #0b1015
+
+    // Fonts options
+    font-family: 'Recursive', sans-serif
+    color: #fff !important
+
+header
+    display: flex
+    align-items: center
+    background-color: #0b1015ce
+
+    img
+        width: 14vh
+        margin: 2vh 0 0 2vh
+
+.welcomeText
+    margin-top: 2vh
+    font-size: 3vh
+    margin-left: 2.6vh
+
+.nav
+    position: absolute
+    margin-top: 2vh
+    right: 0
+    margin-right: 5vh
+    a
+        padding: 2vh
+        text-decoration: none
+        color: #fff
+        &:hover
+            color: #c9c9c9
+
+.active
+    text-decoration: underline !important
+
+.unavailable
+    text-decoration: line-through !important
+    pointer-events: none
+
+@media screen and ( max-width: 642px )
+    .welcomeText
+        display: none
