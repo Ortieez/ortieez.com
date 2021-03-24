@@ -102,6 +102,9 @@ header img {
   .nav {
     margin-right: 3vh;
   }
+  .nav a {
+    font-size: 2vh;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
