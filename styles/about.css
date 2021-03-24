@@ -19,6 +19,10 @@
   flex-wrap: wrap;
   padding: 5vh;
 }
+.txt a {
+  text-decoration: none;
+  color: #979797 !important;
+}
 
 .subtitle {
   color: #d8d8d8 !important;
