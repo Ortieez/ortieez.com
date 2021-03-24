@@ -35,12 +35,38 @@ header
     margin-top: 2vh
     right: 0
     margin-right: 5vh
+    font-size: 2vh
     a
         padding: 2vh
         text-decoration: none
         color: #fff
         &:hover
-            color: #c9c9c9
+            color: #9d9d9d
+
+.main-content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-top: 10%
+    .text
+        display: flex
+        padding: 1vh
+        h2
+            padding: 1.5vh
+            &:hover
+                transition: .3s
+                color: #0b1015 !important
+                background-color: #ffffff !important
+
+.second-text
+    i
+        padding: 1.2vh
+        font-size: 3.5vh
+        color: white
+        &:hover
+            transition: .2s
+            color: #bbbbbb
 
 .active
     text-decoration: underline !important
@@ -49,6 +75,18 @@ header
     text-decoration: line-through !important
     pointer-events: none
 
-@media screen and ( max-width: 642px )
+@media screen and ( max-width: 700px )
     .welcomeText
         display: none
+
+    .main-content
+        margin-top: 20%
+
+    .text
+        flex-direction: column
+        align-items: center
+
+    .nav
+        margin-right: 3vh
+
+@media screen and ( min-width: 1000px )

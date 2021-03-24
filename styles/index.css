@@ -35,6 +35,7 @@ header img {
   margin-top: 2vh;
   right: 0;
   margin-right: 5vh;
+  font-size: 2vh;
 }
 .nav a {
   padding: 2vh;
@@ -42,7 +43,37 @@ header img {
   color: #fff;
 }
 .nav a:hover {
-  color: #c9c9c9;
+  color: #9d9d9d;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.main-content .text {
+  display: flex;
+  padding: 1vh;
+}
+.main-content .text h2 {
+  padding: 1.5vh;
+}
+.main-content .text h2:hover {
+  transition: 0.3s;
+  color: #0b1015 !important;
+  background-color: #ffffff !important;
+}
+
+.second-text i {
+  padding: 1.2vh;
+  font-size: 3.5vh;
+  color: white;
+}
+.second-text i:hover {
+  transition: 0.2s;
+  color: #bbbbbb;
 }
 
 .active {
@@ -54,9 +85,22 @@ header img {
   pointer-events: none;
 }
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 700px) {
   .welcomeText {
     display: none;
+  }
+
+  .main-content {
+    margin-top: 20%;
+  }
+
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    margin-right: 3vh;
   }
 }
 

@@ -1,0 +1,41 @@
+.main-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.line {
+  background-color: white;
+  height: 25rem;
+  width: 0.3vh;
+  margin-left: 5vh;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 5vh;
+}
+
+.subtitle {
+  color: #d8d8d8 !important;
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+.space {
+  padding: 1vh;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .line {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
