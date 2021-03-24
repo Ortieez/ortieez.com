@@ -107,13 +107,18 @@ header img {
   }
 }
 @media screen and (max-width: 495px) {
+  header {
+    align-items: center;
+    justify-content: middle;
+    align-content: center;
+  }
   header img {
     display: none;
   }
 
   .nav {
+    left: 10%;
     margin-top: 18vh;
-    margin-right: 9%;
   }
 
   .main-content {
