@@ -41,5 +41,10 @@
     display: none;
   }
 }
+@media screen and (max-width: 495px) {
+  .main-txt {
+    margin-top: 10vh;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */
