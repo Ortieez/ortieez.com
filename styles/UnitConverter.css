@@ -1,0 +1,22 @@
+
+
+body {
+	color: white;
+	background-color: #131313;
+}
+
+form {
+	margin-top: 13rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+fieldset {
+	width: 10rem;
+}
+
+.container {
+	padding: 3px;
+	width: 110px;
+}
