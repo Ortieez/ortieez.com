@@ -23,28 +23,14 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: ./dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: dist
-      
       - name: Deploy to beta
         uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
           ftp_host: ${{ secrets.FTP_HOST }}
           ftp_username: ${{ secrets.FTP_USERNAME }}
           ftp_password: ${{ secrets.FTP_PASSWORD }}
-          local_source_dir: "/home/runner/work/ortieez.com/ortieez.com/dist"
+          local_source_dir: "dist"
           dist_target_dir: "./"
           delete: "true"
           exclude: "'^logs/' '^README.md'"
+      
