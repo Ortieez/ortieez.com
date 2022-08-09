@@ -29,9 +29,9 @@ body {
     overflow: hidden;
 
     background-color: #282828;
-}
 
-::selection {
-    background: #EBDBB2;
-    color: #282828;
+    -khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }

@@ -1,5 +1,6 @@
 <script>
     import Background from '../elements/Background.svelte';
+    import Menu from '../elements/Menu.svelte';
 </script>
 
 <main>
@@ -12,10 +13,16 @@
             <h1 class="push">developer</h1>
         </div>
     </div>
+   
+    <div class="menu">
+        <Menu />
+    </div>
+
     <Background />
 </main>
 
 <style>
+
     .logo,
     .text {
         position: absolute;
