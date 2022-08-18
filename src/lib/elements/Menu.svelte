@@ -1,5 +1,5 @@
 <script>
-    function test(){
+    function openMenu(){
         let menu = document.getElementById('menu');
         let menuDisplay = menu.style.height
         if (menuDisplay == "0vh") {
@@ -10,13 +10,22 @@
             menu.style.opacity = "0"
         }
     }
+
+    function changeState() {
+        let menuButtonText = document.getElementById("menuButtonText");
+        if (menuButtonText.innerHTML == "menu") {
+            menuButtonText.innerHTML = "close";
+        } else {
+            menuButtonText.innerHTML = "menu";
+        }
+    };
 </script>
 
 <main>
-    <div class="menuButton" on:click="{test}">
-        <h1>menu</h1>
+    <div class="menuButton" on:click="{openMenu}" on:click="{changeState}">
+        <h1 id="menuButtonText">menu</h1>
     </div>
-    <div id="menu" class="menuInsides">
+    <div id="menu" class="menuInsides" style="height: 0vh; opacity: 0;">
       pindik
     </div>
 </main>

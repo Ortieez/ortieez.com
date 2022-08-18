@@ -1,3 +1,17 @@
+<script>
+    import anime from 'animejs';
+
+    anime({
+        targets: '.line-drawing-demo .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function(el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+    });
+</script>
+
 <style>
     .line {
         display: block;
@@ -40,7 +54,7 @@
         bottom: -50%;
         width: 200%;
         height: 200vh;
-        background: transparent url('../../assets/Rectangle.png') repeat 0 0;
+        background: transparent url('assets/Rectangle.png') repeat 0 0;
         filter: contrast(2);
         background-repeat: repeat;
         animation: bg-animation .2s infinite;

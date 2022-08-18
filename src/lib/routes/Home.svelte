@@ -1,12 +1,14 @@
 <script>
     import Background from '../elements/Background.svelte';
     import Menu from '../elements/Menu.svelte';
+
+    
 </script>
 
 <main>
     <div class="center">
         <div class="logo">
-            <img src="../../../public/assets/LogoLight.png" alt="logo">
+            <img src="assets/LogoLight.png" alt="logo">
         </div>
         <div class="text">
             <h1>student</h1>
