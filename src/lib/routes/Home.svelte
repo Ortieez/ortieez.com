@@ -6,7 +6,7 @@
 <main>
     <div class="center">
         <div class="logo">
-            <img src="public/LogoLight.png" alt="logo">
+            <img src="LogoLight.png" alt="logo">
         </div>
         <div class="text">
             <h1>student</h1>

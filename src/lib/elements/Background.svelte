@@ -54,7 +54,7 @@
         bottom: -50%;
         width: 200%;
         height: 200vh;
-        background: transparent url('public/Rectangle.png') repeat 0 0;
+        background: transparent url('Rectangle.png') repeat 0 0;
         filter: contrast(2);
         background-repeat: repeat;
         animation: bg-animation .2s infinite;
