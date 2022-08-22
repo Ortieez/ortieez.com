@@ -1,8 +1,6 @@
 <script>
     import Background from '../elements/Background.svelte';
     import Menu from '../elements/Menu.svelte';
-
-    
 </script>
 
 <main>
