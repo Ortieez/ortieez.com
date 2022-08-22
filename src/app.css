@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Hack NF Regular";
-    src: url("fonts/HACK\ REGULAR\ NERD\ FONT\ COMPLETE.TTF");
+    src: url("fonts/HACKREGULARNERDFONTCOMPLETE.TTF");
 }
 
 @font-face {
     font-family: "Hack NF Bold Italic";
-    src: url("fonts/HACK\ BOLD\ ITALIC\ NERD\ FONT\ COMPLETE.TTF");
+    src: url("fonts/HACKBOLDITALICNERDFONTCOMPLETE.TTF");
 }
 
 @font-face {
     font-family: "Hack NF Bold";
-    src: url("fonts/HACK\ BOLD\ NERD\ FONT\ COMPLETE.TTF");
+    src: url("fonts/HACKBOLDNERDFONTCOMPLETE.TTF");
 }
 
 @font-face {
     font-family: "Hack NF Italic";
-    src: url("fonts/HACK\ ITALIC\ NERD\ FONT\ COMPLETE.TTF");
+    src: url("fonts/HACKITALICNERDFONTCOMPLETE.TTF");
 }
 
 html,

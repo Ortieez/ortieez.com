@@ -79,25 +79,26 @@
         }
     }
 
-    window.onload = () => {
+    const onload = () => {
         const handleScrambleHome = e => {
-            homeFx.setText("/ home");
-        }
+        homeFx.setText("/ home");
+    }
 
-        const handleScrambleAbout = e => {
-            aboutFx.setText("/ about me");
-        }
+    const handleScrambleAbout = e => {
+        aboutFx.setText("/ about me");
+    }
 
-        const home = document.querySelector('.home')
-        const about = document.querySelector('.about')
+    const home = document.querySelector('.home')
+    const about = document.querySelector('.about')
 
-        const homeFx = new TextScramble(home)
-        const aboutFx = new TextScramble(about)
+    const homeFx = new TextScramble(home)
+    const aboutFx = new TextScramble(about)
 
-        home.addEventListener("mouseover", handleScrambleHome);
-        about.addEventListener("mouseover", handleScrambleAbout);
+    home.addEventListener("mouseover", handleScrambleHome);
+    about.addEventListener("mouseover", handleScrambleAbout);
 
     }
+    
 
     function changeState() {
         let menuButtonText = document.getElementById("menuButtonText");
@@ -123,11 +124,11 @@
             <div class="items" id="items">
                 <ul>
                     <div class="item">
-                        <li><a href="/" class="underline home"  use:link>/ home</a></li>
+                        <li><a use:onload href="/" class="underline home"  use:link>/ home</a></li>
                         <li>Less is more. More is less.<li>
                     </div>
                     <div class="item">
-                        <li><a href="/about" class="underline about" use:link>/ about me</a></li>
+                        <li><a use:onload href="/about" class="underline about" use:link>/ about me</a></li>
                         <li>Something something about me.<li>
                     </div>
                 </ul>
