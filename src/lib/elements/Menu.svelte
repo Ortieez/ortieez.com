@@ -1,5 +1,6 @@
 <script>
-    import { link } from 'svelte-spa-router'
+    import { link } from 'svelte-spa-router';
+    import { fade } from 'svelte/transition';
 
     class TextScramble {
             constructor(el) {
@@ -109,26 +110,22 @@
         }
     };
 
-
-   
-
-
 </script>
 
 <main>
     <div class="menuButton" on:click="{openMenu}" on:click="{changeState}">
         <h1 id="menuButtonText">menu</h1>
     </div>
-    <div id="menu" class="menuInsides" style="height: 0vh; opacity: 0;">
+    <div transition:fade id="menu" class="menuInsides" style="height: 0vh; opacity: 0;">
         <div class="divider">
             <div class="items" id="items">
                 <ul>
                     <div class="item">
-                        <li><a use:onload href="/" class="underline home"  use:link>/ home</a></li>
+                        <li><a use:onload href="/" class="home" use:link>/ home</a></li>
                         <li>Less is more. More is less.<li>
                     </div>
                     <div class="item">
-                        <li><a use:onload href="/about" class="underline about" use:link>/ about me</a></li>
+                        <li><a use:onload href="/about" class="about" use:link>/ about me</a></li>
                         <li>Something something about me.<li>
                     </div>
                 </ul>
@@ -139,13 +136,18 @@
 </main>
 
 <style>
+    @font-face {
+        font-family: "Hack NF Bold";
+        src: url("fonts/HACKBOLDNERDFONTCOMPLETE.TTF");
+    }
+
     .menuButton {
         position: absolute;
         top: 7.7vh;
         z-index: 3;
         left: 50%;
         font-size: large;
-        font-family: 'Hack NF Bold';
+        font-family: "Hack NF Bold";
         color: #EBDBB2;
         opacity: 0.3;
         transform: translate(-50%, -50%);
@@ -220,26 +222,5 @@
         width: 50%;
         height: 83.7vh;
         transition: all .5s ease-in-out;
-    }
-
-    .underline {
-        mix-blend-mode: difference;
-        display: inline-block;
-        color: #000;
-        text-decoration: none;
-    }
-
-    .underline::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #000;
-        transition: width .3s;
-    }
-
-    .underline:hover::after {
-        width: 100%;
-        transition: width .3s;
     }
 </style>
