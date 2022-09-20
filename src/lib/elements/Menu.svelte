@@ -108,7 +108,7 @@
         }
     }
 
-     function onLoad() {
+     const onload = () => {
         const handleScrambleHome = (e) => {
             homeFx.setText("/ home");
         };
@@ -140,13 +140,13 @@
                         <ul>
                             <div class="item">
                                 <li>
-                                    <a href="/" class="home" on:click={animate(0)} use:link>/ home</a>
+                                    <a use:onload href="/" class="home" on:click={animate(0)} use:link>/ home</a>
                                 </li>
                                 <li>The homepage</li>
                             </div>
                             <div class="item">
                                 <li>
-                                    <a href="/about" class="about" on:click={animate(0)} use:link>/ about me</a>
+                                    <a use:onload href="/about" class="about" on:click={animate(0)} use:link>/ about me</a>
                                 </li>
                                 <li>Something something about me.</li>
                             </div>
