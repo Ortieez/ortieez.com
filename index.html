@@ -5,10 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
 
-    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+         $(document).bind('mousemove', function(e){
+        $('#tail').css({
+            left: e.clientX + 20,
+            top: e.clientY + document.body.scrollTop
+        });
+    });
+    </script>
+<div class="project-01">
+    <a href="project-site-01.html">
+        <img src="images/project-cover-01.png" alt="Project description">
+    </a>
+   
+</div>
+   <div class="container">
+        <div class="test">
+            <svg id="about-me" onclick="test()" class="shard" width="162" height="247" viewBox="0 0 162 247" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="img1" patternUnits="userSpaceOnUse" width="162" height="247">
+                        <image xlink:href="https://images.unsplash.com/photo-1667045014018-681ed9ceda0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" x="0" y="0"
+                            width="162" height="247" /><!-- Image from http://silviahartmann.com/background-tile/6-grass-meadow-tile.php-->
+                    </pattern>
+                </defs>
+                <path class="path" d="M107.5 246.5L0 0L162 183.5L107.5 246.5Z" fill="url(#img1)"/>
+                
+            </svg>
+            <div class="another-test" id="test2">
+               <a href="javascript:close();">close</a>
+            </div>    
+        </div>
+        <svg class=" shard" width="94" height="187" viewBox="0 0 94 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path  class="path"d="M93.5 176L16.5 0L0 187L93.5 176Z" fill="#282828"/>
+        </svg>
+        <svg class=" shard" width="124" height="82" viewBox="0 0 124 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M36.5 11L0 82L124 0L36.5 11Z" fill="#282828"/>
+        </svg>
+        <svg class="shard" width="173" height="87" viewBox="0 0 173 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"d="M134 0L0 87H172.5L134 0Z" fill="#282828"/>
+        </svg>
+        <svg class="shard" width="122" height="80" viewBox="0 0 122 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"d="M45.5 25.5L0 80L121.5 0L45.5 25.5Z" fill="#282828"/>
+        </svg>
+        <svg class="shard" width="151" height="187" viewBox="0 0 151 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"d="M151 0L0 98L35 187L151 0Z" fill="#282828"/>
+        </svg>
+        
+   </div>
+
 </body>
+<script src="scripts/test.js"></script>
+
 </html>
